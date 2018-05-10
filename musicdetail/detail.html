@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>iTune Music Preview</h1>
+    <div class="detail-holder" ng-repeat="detail in responseList">
+        <!-- {{responseList}} -->
+        <img ng-src="{{detail.imimage[2].label}}" alt="" class="detailImg">
+        <h3>{{detail.imname.label}}</h3>
+        <p class="inline-block">{{detail.imartist.label}}</p>
+        <p class="db-name ">{{detail.category.attributes.label}}</p>
+        <div class="inline-block like" ng-if="!getLikeCount" ng-click="getlike()">
+            <img src="../images/unlike.svg" alt="">
+            <span>{{likecount}}</span>
+        </div>
+        <div class="inline-block" ng-if="getLikeCount">
+            <img src="../images/like .png" alt="" ng-if="getLikeCount">
+            <span>{{likecount}}</span>
+        </div>
+
+    </div>
+</div>

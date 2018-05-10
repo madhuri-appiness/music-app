@@ -1,0 +1,119 @@
+h1 {
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px; }
+
+h3 {
+  font-size: 22px;
+  line-height: 23px;
+  font-weight: 600;
+  color: #000; }
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+      line-height: 23px; } }
+
+.inline-block {
+  display: inline-block; }
+
+.like {
+  cursor: pointer;
+  margin-top: 10px; }
+  .like span {
+    vertical-align: middle; }
+
+.search {
+  width: 350px; }
+  .search .form-control {
+    background-image: url(../images/icon-search.png);
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+    width: 100%;
+    padding: 15px 40px; }
+  @media (max-width: 767px) {
+    .search {
+      width: auto; } }
+
+.cover {
+  min-height: 430px;
+  position: relative;
+  margin-bottom: 20px; }
+  @media (max-width: 767px) {
+    .cover {
+      min-height: auto; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .cover {
+      min-height: 300px; } }
+  .cover img {
+    width: 100%;
+    height: 100%; }
+  .cover h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px; }
+
+.navbar-default {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  margin: 0; }
+  .navbar-default .navbar-nav li a {
+    color: #fff; }
+    .navbar-default .navbar-nav li a:hover {
+      color: #fff; }
+    .navbar-default .navbar-nav li a:focus {
+      color: #fff; }
+  .navbar-default .navbar-brand {
+    padding: 10px 15px; }
+
+.music-app-holder .albums {
+  text-align: center;
+  min-height: 260px;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid #E9E9E9; }
+  .music-app-holder .albums h4 {
+    color: #5F52A1;
+    margin-top: 20px;
+    font-size: 16px;
+    white-space: nowrap;
+    width: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .music-app-holder .albums .albumImg {
+    position: relative; }
+    .music-app-holder .albums .albumImg .play {
+      display: none;
+      position: absolute;
+      top: 50%;
+      width: 45px;
+      transform: translatey(-50%);
+      background: #000;
+      border-radius: 50%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transition: all 1s ease; }
+  .music-app-holder .albums:hover .play {
+    display: block;
+    transition: all 1s ease; }
+
+.detail-holder {
+  text-align: center; }
+  .detail-holder .detailImg {
+    min-height: 250px;
+    max-width: 250px; }
+  .detail-holder p {
+    color: #e72c30;
+    font-size: 18px;
+    margin-bottom: 0px; }
+  .detail-holder .db-name {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.35); }

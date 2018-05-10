@@ -1,0 +1,38 @@
+<div ng-controller="musicAppCtrl">
+    <div class="cover">
+        <img src="../images/cover.jpg" alt="">
+        <h1>{{result.title.label}}</h1>
+    </div>
+    <div class="container">
+        <div class="music-app-holder">
+            <div class="form-group search inline-block">
+                <input type="text" class="form-control" placeholder="Search for albums" ng-model='temp1'>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-xs-12" ng-repeat="music in arr = (responseList | filter:temp1)">
+                            <div class="albums" ng-click="getDetail(music.id.attributes.imid)">
+                                <div class="albumImg">
+                                    <img ng-src="{{music.imimage[2].label}}" alt="">
+                                    <img src="../images/play.png" alt="" class="play">
+                                </div>
+
+                                <h4>
+                                    {{music.imname.label}}
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="notfound" ng-if="arr.length === 0">
+                            <h1>No result found</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

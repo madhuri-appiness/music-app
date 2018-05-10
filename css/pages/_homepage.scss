@@ -1,0 +1,58 @@
+.music-app-holder {
+    .albums {
+        text-align: center;
+        min-height: 260px;
+        padding: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border: 1px solid #E9E9E9;
+        h4 {
+            color: #5F52A1;
+            margin-top: 20px;
+            font-size: 16px;
+            white-space: nowrap;
+            width: 210px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .albumImg {
+            position: relative;
+            .play {
+                display: none;
+                position: absolute;
+                top: 50%;
+                width: 45px;
+                transform: translatey(-50%);
+                background: #000;
+                border-radius: 50%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                transition: all 1s ease;
+            }
+        }
+        &:hover {
+            .play {
+                display: block;
+                transition: all 1s ease;
+            }
+        }
+    }
+}
+
+.detail-holder {
+    text-align: center;
+    .detailImg {
+        min-height: 250px;
+        max-width: 250px;
+    }
+    p {
+        color: #e72c30;
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .db-name {
+        font-size: 14px;
+        color: rgba(0, 0, 0, .35);
+    }
+}
